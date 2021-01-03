@@ -73,7 +73,7 @@
     if (isset($_GET['del'])) {
         $id = $_GET['del'];
         mysqli_query($db, "DELETE FROM stock WHERE id=$id");
-        $_SESSION['msg'] = "Vehículo Eliminado"; 
+        $_SESSION['msg'] = "Vehículo eliminado"; 
         header('location: index.php');
     }
 

@@ -54,7 +54,6 @@
 </table>
 
 	<form method="post" action="server.php" >
-	<h2>Añade Nuevos Vehículos</h2>
 		<input type="hidden" name="id" value="<?php echo $id; ?>" required>
 		<div class="input-group">
 			<label>Marca</label>
