@@ -39,7 +39,7 @@
         $update = true;
         $data = mysqli_query($db, "SELECT * FROM stock WHERE id=$id");
 
-        if (count($data) == 1 ) {
+        if (@count($data) == 1 ) {
             $n = mysqli_fetch_array($data);
             $marca = $n['marca'];
             $modelo = $n['modelo'];
