@@ -1,5 +1,5 @@
 <?php 
-   // error_reporting(0);
+    //error_reporting(0);
     session_start();
 
     //Conecta a la base de datos
@@ -37,10 +37,10 @@
     if (isset($_GET['edit'])) {
         $id = $_GET['edit'];
         $update = true;
-        $record = mysqli_query($db, "SELECT * FROM stock WHERE id=$id");
+        $data = mysqli_query($db, "SELECT * FROM stock WHERE id=$id");
 
-        if (count($record) == 1 ) {
-            $n = mysqli_fetch_array($record);
+        if (count($data) == 1 ) {
+            $n = mysqli_fetch_array($data);
             $marca = $n['marca'];
             $modelo = $n['modelo'];
             $version = $n['version'];

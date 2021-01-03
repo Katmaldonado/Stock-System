@@ -29,7 +29,8 @@
 			<th>Combustible</th>
 			<th>Transmisión</th>
 			<th>Precio</th>
-			<th colspan="2">Opciones</th>
+			<th>Editar</th>
+			<th>Eliminar</th>
 		</tr>
 	</thead>
 	
